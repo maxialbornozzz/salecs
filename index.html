@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Responde wachin</title>
+</head>
+<body>
+    <h1 class="poronga">¿Hoy sale un CS?</h1>
+        <div>
+            <a href="https://s.team/p/gdgg-ttcf/kggrkggh" id="enlaceConfeti">SI</a>
+            <a href="https://es.pornhub.com/" class="no">NO</a>
+        </div>
+
+        <script>
+            // Función que dispara el confeti
+            function lanzarConfeti() {
+              confetti({
+                particleCount: 100,  // Número de piezas de confeti
+                spread: 70,          // Cuán disperso será el confeti
+                origin: { x: 0.5, y: 0.5 }  // Centro de la pantalla
+              });
+            }
+        
+            // Evento que ejecuta la función al hacer clic en el enlace
+            document.getElementById('enlaceConfeti').addEventListener('click', function(event) {
+              event.preventDefault(); // Prevenir la acción predeterminada del enlace
+              lanzarConfeti();        // Lanza el confeti
+        
+              // Redirige al enlace después de 1 segundo (1000 ms)
+              setTimeout(function() {
+                window.location.href = event.target.href;
+              }, 1000);
+            });
+          </script>
+        
+</body>
+</html>

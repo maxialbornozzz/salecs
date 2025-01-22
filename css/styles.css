@@ -1,0 +1,46 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+}
+
+body{
+    background-color: rgb(24, 24, 24)
+}
+
+.poronga{
+    text-align: center;
+    margin-top: 200px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+
+}
+a{
+    width: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    background-color: aliceblue;
+    border-radius: 10px;
+    padding: 15px 30px;
+    justify-content: center;
+    color: #000000;
+    text-decoration: none;
+}
+.no{
+    margin-left: 20px;
+}
+div{
+    margin-top: 50px;
+    text-align: center;
+}
+#enlaceConfeti:hover{
+    background-color: rgb(3, 255, 3);
+    color: white;
+}
+.no:hover{
+    background-color: red;
+    color: white;
+}
+.poronga:hover{
+    color: rgb(114, 114, 114);
+}
